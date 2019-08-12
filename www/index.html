@@ -12,6 +12,24 @@
 
 </head>
 <body>
-  <h1>Testo test</h1>
+  <form action="basal.php" method="POST">
+  <h1>Calculadora de Metabolsimo Basal</h1>
+  <div class="row">
+    <h1>Selecione de acordo com a sua taxa de atividade</h1>
+			<select  name="taxa_atividade"  class="form-control"> 
+				<option value="">Selecione aqui</option>
+				<option value="1">Sedentário(Faz poucos exercícios ou nenhum)</option>
+				<option value="2">Levemente ativo(Faz exercícios leves de 1 a 3 dias por semana)</option>
+				<option value="3">Moderadamente ativo(Faz exercícios moderados ou/e faz esportes 3 a 5 dias por semana)</option>
+				<option value="4">Altamente ativo(Faz exercícios pesados de 5 a 6 dias por semana)</option>
+				<option value="5">Extremamente ativo(Faz exercícios diaramente e até 2 vezes por dia)</option>
+			</select>
+      <h1>Digite seu peso:</h1> <input type="number" name="peso" class="form-control" placeholder="Digite seu peso aqui">
+      <h1>Digite sua altura:</h1> <input type="number" name="altura" class="form-control" placeholder="Digite sua altura aqui">
+      <h1>Digite sua idade:</h1> <input type="number" name="idade" class="form-control" placeholder="Digite sua idade aqui">
+      <br><br>
+      <input type="submit" value="ENVIAR" class="form-control" >
+		</div>
+  </form>
 </body>
 </html>
