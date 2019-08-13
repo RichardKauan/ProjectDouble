@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/jquery.min.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
   <script src="components/acao.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
@@ -22,17 +22,18 @@
     </div>
   </div>
 
-  <div class="row linhaFormulario">
+ <div class="row linhaFormulario">
     <div class="col-xs-12 linhaSexo">
         <label>Sexo:</label>
         <label>
-          <input type="radio" name="sexo" value="masculino" id="homem" > Masculino
+          <input type="radio" name="sexo" value="masculino" id="homem"> Masculino
         </label>
         <label>
           <input type="radio" name="sexo" value="feminino" id="mulher"> Feminino
         </label>
     </div>
   </div>
+  <br>
 
 
   <div class="row linhaFormulario">
@@ -77,7 +78,7 @@
         <select class="form-control" id="nivelAtividade">
           <option selected disabled>Nível de Atividade</option>
           <option value="1.2">Sedentários</option>
-          <option value="1.375">Levemente ativo</option>
+          <option value="1375">Levemente ativo</option>
           <option value="1.55">Moderadamente ativo</option>
           <option value="1.725">Altamente ativo</option>
           <option value="1.9">Extremamente ativo</option>
@@ -87,6 +88,12 @@
       <div class="button">
         <div class="col-xs-12">
           <button class="btn btn-block btn-success" id="calcular">Calcular</button>
+        </div>
+      </div>
+      <br><br>
+      <div class="button">
+        <div class="col-xs-12">
+          <button class="btn btn-block btn-danger" id="limpar">Limpar</button>
         </div>
       </div>
     </div>
