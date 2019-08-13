@@ -8,14 +8,14 @@
   <script src="lib/onsenui/js/onsenui.min.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
-
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="components/acao.js"></script>
 
 </head>
-<body>
-  <body id="corpo">
+<body id="corpo">
   <div class="container">
-  <div class="jumbotron calc">
+  <div class="calc">
   <div class="row titulo">
     <div class="col-xs-12">
       <h2>Calculadora TMB</h2>
@@ -24,11 +24,10 @@
 
   <div class="row linhaFormulario">
     <div class="col-xs-12 linhaSexo">
-        <label>Sexo:</label><br>
-
+        <label>Sexo:</label>
         <label>
-          <input type="radio" name="sexo" value="masculino" id="masculino" > Masculino 
-          </label>
+          <input type="radio" name="sexo" value="masculino" id="masculino" > Masculino
+        </label>
         <label>
           <input type="radio" name="sexo" value="feminino" id="feminino"> Feminino
         </label>
@@ -42,7 +41,7 @@
         <label>Peso: </label>
       </div>
       <div class="col-xs-9">
-        <input class="form-control" type="number" id="peso">
+        <input class="form-control" type="number" id="peso" placeholder="Digite seu peso">
       </div>
     </div>
   </div>
@@ -53,7 +52,7 @@
         <label>Altura: </label>
       </div>
       <div class="col-xs-9">
-        <input class="form-control" type="number" id="altura">
+        <input class="form-control" type="number" id="altura" placeholder="Digite sua altura em CM">
       </div>
     </div>
   </div>
@@ -64,7 +63,7 @@
         <label>Idade: </label>
       </div>
       <div class="col-xs-9">
-        <input class="form-control" type="number" id="idade">
+        <input class="form-control" type="number" id="idade" placeholder="Digite sua idade">
       </div>
     </div>
   </div>
@@ -72,9 +71,9 @@
   <div class="row linhaAtividade">
     <div class="form-group">
       <div class="col-xs-3">
-        <label>Atividade: </label>
+        <label>Atividade:</label>
       </div>
-      <div class="col-xs-6 nvlAtvd">
+      <div class="col-xs-8 nvlAtvd">
         <select class="form-control" id="nivelAtividade">
           <option value="1.2">Sedentários</option>
           <option value="1.375">Levemente ativo</option>
@@ -84,22 +83,25 @@
         </select>
       </div>
       
-      <div class="row button">
+      <div class="button">
         <div class="col-xs-12">
-          <button class="btn btn-success" id="btnCalcular">Calcular</button>
+          <button class="btn btn-block btn-success" id="btnCalcular">Calcular</button>
         </div>
       </div>
     </div>
   </div><hr>
 
   <div class="row display">
-    <div class="col-xs-7">
-      <label>Metabolismo Basal:</label>
+    <div class="col-xs-8">
+      <label>RESULTADO:</label>
     </div>
-    <div class="col-xs-5">
+    <div class="col-xs-6">
       <input type="text" id="displayMetabolismo" class="form-control" readonly>
     </div>
   </div>
+  <div class="imagem">
+    <img src="imagens/doutor.png"></img>
+    </div>
   </div>
   </div>
 </body>

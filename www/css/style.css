@@ -1,0 +1,62 @@
+.titulo{
+  margin-top: -17px;
+ background-color: #008B8B;
+ margin-bottom: 20px;
+}
+.titulo h2{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.linhaBaixo{
+  margin-bottom: 15px; 
+}
+.linhaAtividade{
+  font-size: 25px;
+}
+.linhaFormulario button{
+  margin-right: 20px;
+  background-color: #008B8B;
+}
+.linhaFormulario label{
+  font-size: 25px;
+}
+.display label{
+  text-align: center;
+  margin-left:;
+  font-size: 30px;
+}
+.display input{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+hr{
+ color: #008B8B;
+ background-color: #008B8B;
+ height: 3px;
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+.button{
+  text-align: center;
+  font-size: 100px;
+}
+#corpo{
+  background-color: #f7eed1; 
+}
+.linhaSexo{
+  margin-left: 0px;
+}
+.nvlAtvd{
+  margin-left: 34px;
+}
+.calc{
+  margin-top: 15px;
+}
+.imagem img{
+  margin-top: -100px;
+  margin-left: 20px;
+}
