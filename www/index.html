@@ -4,32 +4,113 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-  <script src="components/loader.js"></script>
-  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <script src="components/acao.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  
 
 </head>
-<body>
-  <form action="basal.php" method="POST">
-  <h1>Calculadora de Metabolsimo Basal</h1>
-  <div class="row">
-    <h1>Selecione de acordo com a sua taxa de atividade</h1>
-			<select  name="taxa_atividade"  class="form-control"> 
-				<option value="">Selecione aqui</option>
-				<option value="1">Sedentário(Faz poucos exercícios ou nenhum)</option>
-				<option value="2">Levemente ativo(Faz exercícios leves de 1 a 3 dias por semana)</option>
-				<option value="3">Moderadamente ativo(Faz exercícios moderados ou/e faz esportes 3 a 5 dias por semana)</option>
-				<option value="4">Altamente ativo(Faz exercícios pesados de 5 a 6 dias por semana)</option>
-				<option value="5">Extremamente ativo(Faz exercícios diaramente e até 2 vezes por dia)</option>
-			</select>
-      <h1>Digite seu peso:</h1> <input type="number" name="peso" class="form-control" placeholder="Digite seu peso aqui">
-      <h1>Digite sua altura:</h1> <input type="number" name="altura" class="form-control" placeholder="Digite sua altura aqui">
-      <h1>Digite sua idade:</h1> <input type="number" name="idade" class="form-control" placeholder="Digite sua idade aqui">
+<body id="corpo">
+  <div class="container">
+  <div class="calc">
+  <div class="row titulo">
+    <div class="col-xs-12">
+      <h2>Calculadora TMB</h2>
+    </div>
+  </div>
+
+ <div class="row linhaFormulario">
+    <div class="col-xs-12 linhaSexo">
+        <label>Sexo:</label>
+        <label>
+          <input type="radio" name="sexo" value="masculino" id="homem"> Masculino
+        </label>
+        <label>
+          <input type="radio" name="sexo" value="feminino" id="mulher"> Feminino
+        </label>
+    </div>
+  </div>
+  <br>
+
+
+  <div class="row linhaFormulario">
+    <div class="form-group">
+      <div class="col-xs-3">
+        <label>Peso: </label>
+      </div>
+      <div class="col-xs-9">
+        <input class="form-control" type="number" id="peso" placeholder="Digite seu peso">
+      </div>
+    </div>
+  </div>
+
+  <div class="row linhaFormulario">
+    <div class="form-group">
+      <div class="col-xs-3">
+        <label for="#altura">Altura: </label>
+      </div>
+      <div class="col-xs-9">
+        <input class="form-control" type="number" id="altura" placeholder="Digite sua altura em CM">
+      </div>
+    </div>
+  </div>
+
+  <div class="row linhaFormulario">
+    <div class="form-group">
+      <div class="col-xs-3">
+        <label>Idade: </label>
+      </div>
+      <div class="col-xs-9">
+        <input class="form-control" type="number" id="idade" placeholder="Digite sua idade">
+      </div>
+    </div>
+  </div>
+
+  <div class="row linhaAtividade">
+    <div class="form-group">
+      <div class="col-xs-3">
+        <label>Atividade:</label>
+      </div>
+      <div class="col-xs-8 nvlAtvd">
+        <select class="form-control" id="nivelAtividade">
+          <option selected disabled>Nível de Atividade</option>
+          <option value="1.2">Sedentários</option>
+          <option value="1375">Levemente ativo</option>
+          <option value="1.55">Moderadamente ativo</option>
+          <option value="1.725">Altamente ativo</option>
+          <option value="1.9">Extremamente ativo</option>
+        </select>
+      </div>
+      
+      <div class="button">
+        <div class="col-xs-12">
+          <button class="btn btn-block btn-success" id="calcular">Calcular</button>
+        </div>
+      </div>
       <br><br>
-      <input type="submit" value="ENVIAR" class="form-control" >
-		</div>
-  </form>
+      <div class="button">
+        <div class="col-xs-12">
+          <button class="btn btn-block btn-danger" id="limpar">Limpar</button>
+        </div>
+      </div>
+    </div>
+  </div><hr>
+
+  <div class="row display">
+    <div class="col-xs-8">
+      <label>RESULTADO:</label>
+    </div>
+    <div class="col-xs-6">
+      <input type="text" id="visor" class="form-control" readonly>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="imagem">
+    <img src="imagens/doutor.png"></img>
+    </div>
 </body>
 </html>
