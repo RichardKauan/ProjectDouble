@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   
-
 </head>
 <body id="corpo">
   <div class="container">
@@ -23,18 +22,15 @@
   </div>
 
  <div class="row linhaFormulario">
-    <div class="col-xs-12 linhaSexo">
-        <label>Sexo:</label>
-        <label>
-          <input type="radio" name="sexo" value="masculino" id="homem"> Masculino
-        </label>
-        <label>
-          <input type="radio" name="sexo" value="feminino" id="mulher"> Feminino
-        </label>
+   <label class="col-xs-3">Sexo: </label>
+    <div class="col-xs-9 linhaSexo">
+      <select class="form-control" id="sexo">
+          <option selected disabled>Sexo</option>
+          <option value="masculino">Homem</option>
+          <option value="feminino">Mulher</option>
+        </select>
     </div>
   </div>
-  <br>
-
 
   <div class="row linhaFormulario">
     <div class="form-group">
@@ -84,16 +80,9 @@
           <option value="1.9">Extremamente ativo</option>
         </select>
       </div>
-      
       <div class="button">
         <div class="col-xs-12">
-          <button class="btn btn-block btn-success" id="calcular">Calcular</button>
-        </div>
-      </div>
-      <br><br>
-      <div class="button">
-        <div class="col-xs-12">
-          <button class="btn btn-block btn-danger" id="limpar">Limpar</button>
+          <button class="button" id="calcular">CALCULAR</button>
         </div>
       </div>
     </div>

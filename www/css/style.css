@@ -16,7 +16,7 @@
   font-size: 25px;
 }
 .linhaFormulario button{
-  margin-right: 20px;
+  margin-right: 20%;
   background-color: #008B8B;
 }
 .linhaFormulario label{
@@ -24,7 +24,6 @@
 }
 .display label{
   text-align: center;
-  margin-left:;
   font-size: 30px;
 }
 .display input{
@@ -42,7 +41,14 @@ img{
 }
 .button{
   text-align: center;
-  font-size: 100px;
+  font-size: 93%;
+  background-color: #008B8B;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 2%;
+  color: white;
+  
 }
 #corpo{
   background-color: #f7eed1; 
@@ -58,5 +64,5 @@ img{
 }
 .imagem img{
   margin-top: -100px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
